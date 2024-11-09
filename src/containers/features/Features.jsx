@@ -32,8 +32,8 @@ const Features = () => {
         <p>Request Early Access to Get Started</p>
       </div>
       <div className="gpt__features-container">
-        {featuresData.map((item) => (
-          <Feature title={item.title} text={item.text} />
+        {featuresData.map((item, index) => (
+          <Feature key={index} title={item.title} text={item.text} />
         ))}
       </div>
     </div>
